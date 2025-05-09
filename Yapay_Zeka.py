@@ -2,6 +2,7 @@ import cv2
 import mediapipe as mp
 import numpy as np
 import face_recognition
+import os
 
 # Initialize MediaPipe components
 def initialize_media_pipe():
@@ -186,13 +187,14 @@ def process_video():
     FIXED_FACE_HEIGHT = 300
 
     # Load reference face encodings with names
+    base_dir = os.path.dirname(__file__)  # Get the directory of the current script
     reference_images = {
-        "Baran": "/Users/baran/Desktop/YZT/Yuzler/face1.jpg",
-        "Fox": "/Users/baran/Desktop/YZT/Yuzler/face2.jpg",
-        "Sakaryaspor": "/Users/baran/Desktop/YZT/Yuzler/face3.jpg",
-        "Inter": "/Users/baran/Desktop/YZT/Yuzler/face4.jpg",
-        "Yusuf": "/Users/baran/Desktop/YZT/Yuzler/face5.jpg",
-        "Bulent": "/Users/baran/Desktop/YZT/Yuzler/face6.jpg"
+        "Baran": os.path.join(base_dir, "Faces", "face1.jpg"),
+        "Fox": os.path.join(base_dir, "Faces", "face2.jpg"),
+        "Sakaryaspor": os.path.join(base_dir, "Faces", "face3.jpg"),
+        "Inter": os.path.join(base_dir, "Faces", "face4.jpg"),
+        "Yusuf": os.path.join(base_dir, "Faces", "face5.jpg"),
+        "Bulent": os.path.join(base_dir, "Faces", "face6.jpg")
     }
     reference_encodings, reference_names = load_reference_encodings_with_names(reference_images)
 
