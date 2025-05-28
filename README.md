@@ -94,14 +94,14 @@ REFERENCE_IMAGES = {
 
 The app lets you fine-tune cropping and zoom live:
 
-Key	Action    
-a	Zoom out    
-s	Zoom in    
-d	Reset zoom scale    
-z	Shift crop up    
-x	Shift crop down    
-c	Reset vertical shift    
-q	Quit the app
+Key	&nbsp;&nbsp;Action    
+a	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zoom out    
+s	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zoom in    
+d	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reset zoom scale    
+z	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shift crop up    
+x	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shift crop down    
+c	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reset vertical shift    
+q	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quit the app
 
 ---
 
