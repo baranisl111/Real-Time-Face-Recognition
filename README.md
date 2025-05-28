@@ -7,13 +7,19 @@ It captures video from your webcam, detects faces using MediaPipe, aligns them b
 
 ---
 
-## 📚 Table of Contents
+## Table of Contents
 -[Features](#-features)  
+
 -[Technologies Used](#-technologies-used) 
+
 -[Project Structure](#️-project-structure) 
+
 -[Add Reference Faces](#-add-reference-faces)
+
 -[Keyboard Controls](#️-keyboard-controls)  
+
 -[How to Run](#-how-to-run) 
+
 -[Author](#-author)
 
 ---
@@ -41,13 +47,21 @@ It captures video from your webcam, detects faces using MediaPipe, aligns them b
 ## 🗂️ Project Structure
 
 Real-Time-Face-Recognition/
+
 ├── main.py # Main app entry point
+
 ├── config.py # Constants and reference face paths
+
 ├── face_utils.py # Alignment, detection, cropping
+
 ├── recognition.py # Encoding, top match scoring
+
 ├── display.py # UI rendering and keyboard controls
+
 ├── Faces/ # Reference face images (.jpg)
+
 ├── requirements.txt # All Python dependencies
+
 └── README.md # You're reading it!
 
 ---
@@ -58,17 +72,18 @@ Real-Time-Face-Recognition/
 1-Place face images inside the Faces/ directory (create if it doesn’t exist):
 
 Real-Time-Face-Recognition/
-└── Faces/
-    ├── face1.jpg
-    ├── face2.jpg
-    └── ...
+
+└── Faces/    
+    ├── face1.jpg    
+    ├── face2.jpg    
+    └── ...    
 
 2-In config.py, map each image to a name:
 
-REFERENCE_IMAGES = {
-    "Alice": os.path.join(FACES_DIR, "face1.jpg"),
-    "Bob": os.path.join(FACES_DIR, "face2.jpg")
-    ...
+REFERENCE_IMAGES = {    
+    "Alice": os.path.join(FACES_DIR, "face1.jpg"),    
+    "Bob": os.path.join(FACES_DIR, "face2.jpg")    
+    ...    
 }
 
 🔍 Tip: Use clear, front-facing images with only one face. 
