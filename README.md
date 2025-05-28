@@ -34,7 +34,7 @@ It captures video from your webcam, detects faces using MediaPipe, aligns them b
 
 ---
 
-## 🧠 Technologies_Used
+## 🧠 Technologies Used
 
 - **Python 3.8+**
 - [OpenCV] - Real-time image and video processing  
@@ -68,7 +68,7 @@ Real-Time-Face-Recognition/
 
 ## 📸 Add Reference Faces
 
-🧷 How to Add:
+🧷 How to Add:    
 1-Place face images inside the Faces/ directory (create if it doesn’t exist):
 
 Real-Time-Face-Recognition/
