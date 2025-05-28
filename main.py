@@ -37,11 +37,10 @@ def process_video():
                     resized_face = cv2.resize(face, (FIXED_FACE_WIDTH, FIXED_FACE_HEIGHT))
                     
                     # Recognize the face with landmarks for better alignment
-                    top_matches = recognize_face_with_library(resized_face, reference_encodings, reference_names, landmarks)
+                    best_match_name, similarity = recognize_face_with_library(resized_face, reference_encodings, reference_names, landmarks)
                     
-                    # Display the top 3 matches and their similarity percentages
-                    for i, (name, similarity) in enumerate(top_matches):
-                        cv2.putText(frame, f"{i+1}. {name} ({similarity:.2f}%)", (10, 50 + i * 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
+                    # Display the best match and its similarity percentage
+                    cv2.putText(frame, f"{best_match_name} ({similarity:.2f}%)", (10, 50), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
 
                     # Show the separated face in a separate window
                     cv2.imshow("Detected Face", resized_face)

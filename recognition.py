@@ -26,10 +26,9 @@ def recognize_face_with_library(face, reference_encodings, reference_names, land
     face_encodings = face_recognition.face_encodings(rgb_face)
     if face_encodings:  # Ensure at least one encoding is found
         face_distances = face_recognition.face_distance(reference_encodings, face_encodings[0])
-        sorted_indices = np.argsort(face_distances)[:3]  # Get indices of top 3 matches
-        top_matches = []
-        for idx in sorted_indices:
-            similarity = (1 - face_distances[idx]) * 100  # Calculate similarity percentage
-            top_matches.append((reference_names[idx], similarity))
-        return top_matches
-    return [("Unknown", 0.0)] * 3  # Return "Unknown" only if no encoding is found
+        best_match_index = np.argmin(face_distances)  # Get the index of the best match
+        similarity = (1 - face_distances[best_match_index]) * 100  # Calculate similarity percentage
+        if similarity < 60.0:  # Mark as "Unknown" if similarity is below 60%
+            return "Unknown", 0.0
+        return reference_names[best_match_index], similarity
+    return "Unknown", 0.0  
