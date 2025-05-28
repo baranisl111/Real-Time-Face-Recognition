@@ -22,7 +22,7 @@ It captures video from your webcam, detects faces using MediaPipe, aligns them b
 
 - ✅ Real-time face detection with MediaPipe
 - ✅ Facial landmark-based alignment for improved accuracy
-- ✅ Face recognition with top-3 similarity match scores
+- ✅ Face recognition with similarity match scores
 - ✅ Live webcam support with adjustable cropping and zoom
 - ✅ Modular codebase: easy to extend, debug, or adapt
 
