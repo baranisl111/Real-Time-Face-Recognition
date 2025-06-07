@@ -1,4 +1,4 @@
-# 🎯 Real-Time-Face-Recognition: Real-Time Face Detection and Recognition
+# Real-Time-Face-Recognition: Real-Time Face Detection and Recognition
 
 This app is a real-time face recognition system built with Python.  
 It captures video from your webcam, detects faces using MediaPipe, aligns them based on facial landmarks, and recognizes the identity by comparing against known reference images.
@@ -24,17 +24,17 @@ It captures video from your webcam, detects faces using MediaPipe, aligns them b
 
 ---
 
-## 🚀 Features
+## Features
 
-- ✅ Real-time face detection with MediaPipe
-- ✅ Facial landmark-based alignment for improved accuracy
-- ✅ Face recognition with similarity match scores
-- ✅ Live webcam support with adjustable cropping and zoom
-- ✅ Modular codebase: easy to extend, debug, or adapt
+- Real-time face detection with MediaPipe
+- Facial landmark-based alignment for improved accuracy
+- Face recognition with similarity match scores
+- Live webcam support with adjustable cropping and zoom
+- Modular codebase: easy to extend, debug, or adapt
 
 ---
 
-## 🧠 Technologies Used
+## Technologies Used
 
 - **Python 3.8+**
 - [OpenCV] - Real-time image and video processing  
@@ -44,7 +44,7 @@ It captures video from your webcam, detects faces using MediaPipe, aligns them b
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 Real-Time-Face-Recognition/
 
@@ -66,7 +66,7 @@ Real-Time-Face-Recognition/
 
 ---
 
-## 📸 Add Reference Faces
+## Add Reference Faces
 
 🧷 How to Add:    
 1-Place face images inside the Faces/ directory (create if it doesn’t exist):
@@ -90,7 +90,7 @@ REFERENCE_IMAGES = {
 
 ---
 
-## 🕹️ Keyboard Controls
+## Keyboard Controls
 
 The app lets you fine-tune cropping and zoom live:
 
@@ -105,7 +105,7 @@ q	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quit the app
 
 ---
 
-## 🧪 How to Run
+## How to Run
 
 Make sure Python and pip are installed.
 
@@ -115,7 +115,7 @@ Launch the App: "python main.py"
 
 ---
 
-## 🙋‍♂️ Author
+## Author
 Built with care by Baran İslam.
 
 
