@@ -68,7 +68,7 @@ Real-Time-Face-Recognition/
 
 ## Add Reference Faces
 
-🧷 How to Add:    
+How to Add:    
 1-Place face images inside the Faces/ directory (create if it doesn’t exist):
 
 Real-Time-Face-Recognition/
@@ -86,7 +86,7 @@ REFERENCE_IMAGES = {
     ...    
 }
 
-🔍 Tip: Use clear, front-facing images with only one face. 
+Tip: Use clear, front-facing images with only one face. 
 
 ---
 
